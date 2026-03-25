@@ -1,65 +1,306 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+    <main className="min-h-screen bg-white text-gray-900">
+
+      <header className="bg-white border-b border-gray-100 px-6 py-4 flex justify-between items-center">
+        <div className="text-xl font-bold text-red-700">뭉태기 🔥</div>
+        <a href="tel:051-503-3634" className="bg-red-700 text-white text-sm px-4 py-2 rounded-lg">
+          예약 전화
+        </a>
+      </header>
+
+      <section className="bg-gradient-to-b from-red-900 to-red-700 px-6 py-16 text-center text-white">
+        <p className="text-red-200 text-sm font-semibold mb-3">
+          부산 동래구 아시아드대로 123 · 정육 직배 고기 전문
+        </p>
+        <h1 className="text-4xl font-bold mb-4 leading-tight">
+          정육시장에서 직접 고른<br />
+          <span className="text-yellow-300">신선한 고기</span>를 드립니다
+        </h1>
+        <p className="text-red-100 text-lg mb-8 max-w-lg mx-auto">
+          매일 정육시장을 직접 방문해 품질을 확인하고 가져옵니다.
+          부산 동래구에서 고기 맛으로 입소문난 뭉태기입니다.
+        </p>
+        <div className="flex gap-4 justify-center flex-wrap">
+          <a href="tel:051-503-3634" className="bg-yellow-400 text-gray-900 font-bold px-8 py-4 rounded-xl inline-block">
+            📞 예약하기
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+          <a href="#menu" className="bg-white text-red-700 font-bold px-8 py-4 rounded-xl inline-block">
+            메뉴 보기
           </a>
         </div>
-      </main>
-    </div>
-  );
+      </section>
+
+      <section className="px-6 py-12 max-w-3xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="bg-red-50 rounded-xl p-4 text-center">
+            <p className="text-2xl mb-2">🥩</p>
+            <p className="font-bold text-sm">정육 직배</p>
+            <p className="text-gray-500 text-xs mt-1">매일 직접 구매</p>
+          </div>
+          <div className="bg-red-50 rounded-xl p-4 text-center">
+            <p className="text-2xl mb-2">🏪</p>
+            <p className="font-bold text-sm">감성 인테리어</p>
+            <p className="text-gray-500 text-xs mt-1">20~30대 취향저격</p>
+          </div>
+          <div className="bg-red-50 rounded-xl p-4 text-center">
+            <p className="text-2xl mb-2">��️</p>
+            <p className="font-bold text-sm">주차 완비</p>
+            <p className="text-gray-500 text-xs mt-1">건물 뒷편 주차장</p>
+          </div>
+          <div className="bg-red-50 rounded-xl p-4 text-center">
+            <p className="text-2xl mb-2">👥</p>
+            <p className="font-bold text-sm">단체 가능</p>
+            <p className="text-gray-500 text-xs mt-1">회식 · 모임 환영</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-12 max-w-3xl mx-auto" id="menu">
+        <h2 className="text-2xl font-bold mb-2">대표 메뉴</h2>
+        <p className="text-gray-500 mb-8">정육시장 직배 신선 고기만 사용합니다</p>
+        <div className="space-y-4">
+
+          <div className="border border-gray-100 rounded-xl p-5">
+            <div className="flex justify-between items-start mb-2">
+              <div>
+                <h3 className="font-bold text-lg">생갈비살</h3>
+                <p className="text-gray-500 text-sm">국내산 소고기 · 당일 직배</p>
+              </div>
+              <span className="text-red-700 font-bold text-lg">18,000원</span>
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              정육시장에서 직접 선별한 생갈비살입니다.
+              부드러운 육질과 풍부한 육즙이 특징으로
+              뭉태기의 대표 메뉴입니다.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-5">
+            <div className="flex justify-between items-start mb-2">
+              <div>
+                <h3 className="font-bold text-lg">양념갈비살</h3>
+                <p className="text-gray-500 text-sm">국내산 소고기 · 직접 양념</p>
+              </div>
+              <span className="text-red-700 font-bold text-lg">18,000원</span>
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              직접 개발한 양념으로 재운 갈비살입니다.
+              달콤하고 깊은 풍미가 살아있어
+              처음 방문하는 분들께 강력 추천합니다.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-5">
+            <div className="flex justify-between items-start mb-2">
+              <div>
+                <h3 className="font-bold text-lg">등심</h3>
+                <p className="text-gray-500 text-sm">국내산 소고기 · 당일 직배</p>
+              </div>
+              <span className="text-red-700 font-bold text-lg">18,000원</span>
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              마블링이 고루 분포된 신선한 등심입니다.
+              고소한 풍미와 부드러운 식감으로
+              소고기 본연의 맛을 즐기실 수 있습니다.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-5">
+            <div className="flex justify-between items-start mb-2">
+              <div>
+                <h3 className="font-bold text-lg">삼겹살</h3>
+                <p className="text-gray-500 text-sm">국내산 돼지고기</p>
+              </div>
+              <span className="text-red-700 font-bold text-lg">10,000원</span>
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              두툼하게 썰어 육즙이 살아있는 삼겹살입니다.
+              국내산 돼지고기만 사용합니다.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-5">
+            <div className="flex justify-between items-start mb-2">
+              <div>
+                <h3 className="font-bold text-lg">항정살</h3>
+                <p className="text-gray-500 text-sm">국내산 돼지고기 · 특수부위</p>
+              </div>
+              <span className="text-red-700 font-bold text-lg">10,000원</span>
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              돼지의 목덜미에서 소량만 나오는 특수부위입니다.
+              쫄깃한 식감과 진한 육향이 특징입니다.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section className="bg-gray-50 px-6 py-12">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold mb-2">방문 후기</h2>
+          <p className="text-gray-500 mb-8">실제 방문 손님들의 이야기</p>
+          <div className="space-y-4">
+
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <span className="text-red-600 text-sm font-bold">K</span>
+                </div>
+                <div>
+                  <p className="font-semibold text-sm">key****</p>
+                  <p className="text-gray-400 text-xs">4번째 방문 · 2024.08.28</p>
+                </div>
+                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                사장님 친절하시고 고기 완전 맛나요.
+                여러 번 방문했는데 올 때마다 맛이 한결같아요.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <span className="text-red-600 text-sm font-bold">냐</span>
+                </div>
+                <div>
+                  <p className="font-semibold text-sm">냐햐하햐</p>
+                  <p className="text-gray-400 text-xs">2번째 방문 · 2024.08.10</p>
+                </div>
+                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                너무너무 맛있어요 최고. 연인과 함께 방문했는데
+                분위기도 좋고 고기 퀄리티가 정말 뛰어납니다.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <span className="text-red-600 text-sm font-bold">C</span>
+                </div>
+                <div>
+                  <p className="font-semibold text-sm">cleanbyun</p>
+                  <p className="text-gray-400 text-xs">4번째 방문 · 2024.06.25</p>
+                </div>
+                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                맛있습니다 가성비굿. 데이트로 방문했는데
+                고기 퀄리티 대비 가격이 정말 합리적이에요.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-12 max-w-3xl mx-auto">
+        <h2 className="text-2xl font-bold mb-2">뭉태기 이야기</h2>
+        <p className="text-gray-500 mb-8">왜 정육시장을 직접 가나요?</p>
+        <div className="space-y-4">
+          <div className="border border-gray-100 rounded-xl p-6">
+            <h3 className="font-bold mb-3">🥩 매일 직접 고르는 이유</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              뭉태기는 매일 정육시장을 직접 방문합니다.
+              냉동육이나 유통 단계를 거친 고기가 아닌
+              당일 신선한 고기만 사용하기 위해서입니다.
+              눈으로 직접 확인한 고기만 손님 상에 올립니다.
+            </p>
+          </div>
+          <div className="border border-gray-100 rounded-xl p-6">
+            <h3 className="font-bold mb-3">🏪 20~30대가 찾는 이유</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              좋은 고기를 더 맛있게 먹으려면 공간도 중요하다고 생각합니다.
+              감각적인 인테리어와 편안한 분위기로
+              데이트, 친구 모임, 소규모 회식 모두 어울리는 공간을 만들었습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-12 max-w-3xl mx-auto">
+        <h2 className="text-2xl font-bold mb-8">자주 묻는 질문</h2>
+        <div className="space-y-4">
+
+          <div className="border border-gray-100 rounded-xl p-5">
+            <p className="font-semibold mb-2">Q. 영업시간이 어떻게 되나요?</p>
+            <p className="text-gray-600 text-sm">
+              A. 월·화·수·금·토 오후 4시 30분부터 오후 11시까지 운영합니다.
+              목요일과 일요일은 정기휴무입니다.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-5">
+            <p className="font-semibold mb-2">Q. 예약이 필요한가요?</p>
+            <p className="text-gray-600 text-sm">
+              A. 예약 없이도 방문 가능합니다.
+              실제 방문 후기를 보면 대기 없이 바로 입장하신 분들이 많습니다.
+              주말 저녁 시간대는 전화 예약을 권장합니다.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-5">
+            <p className="font-semibold mb-2">Q. 주차가 가능한가요?</p>
+            <p className="text-gray-600 text-sm">
+              A. 주차 가능합니다. 방문 전 전화로 확인하시면 안내해드립니다.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-5">
+            <p className="font-semibold mb-2">Q. 단체 모임도 가능한가요?</p>
+            <p className="text-gray-600 text-sm">
+              A. 가능합니다. 회식, 생일파티, 친목 모임 모두 환영합니다.
+              단체 방문 시 사전 전화 예약을 부탁드립니다.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-5">
+            <p className="font-semibold mb-2">Q. 고기 원산지가 어떻게 되나요?</p>
+            <p className="text-gray-600 text-sm">
+              A. 소고기와 돼지고기 모두 국내산을 사용합니다.
+              매일 정육시장에서 직접 구매하며 원산지 표시를 철저히 지킵니다.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-5">
+            <p className="font-semibold mb-2">Q. 부산 동래구에서 찾기 어렵지 않나요?</p>
+            <p className="text-gray-600 text-sm">
+              A. 부산 동래구 아시아드대로 123에 위치합니다.
+              네이버 지도나 카카오맵에서 뭉태기로 검색하시면 쉽게 찾으실 수 있습니다.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section className="bg-red-700 text-white px-6 py-12 text-center" id="contact">
+        <h2 className="text-2xl font-bold mb-6">뭉태기 방문하기</h2>
+        <div className="max-w-sm mx-auto space-y-3 mb-8">
+          <p className="text-red-100">📍 부산 동래구 아시아드대로 123</p>
+          <p className="text-red-100">🕔 월·화·수·금·토 16:30 ~ 23:00</p>
+          <p className="text-red-100">🚫 목요일 · 일요일 정기휴무</p>
+          <p className="text-red-100">🅿️ 주차 가능</p>
+        </div>
+        <a href="tel:051-503-3634" className="bg-yellow-400 text-gray-900 font-bold text-xl px-10 py-5 rounded-xl inline-block">
+          📞 051-503-3634
+        </a>
+      </section>
+
+      <footer className="px-6 py-8 border-t text-center">
+        <p className="font-bold text-gray-700 mb-1">뭉태기</p>
+        <p className="text-gray-400 text-sm">부산 동래구 아시아드대로 123</p>
+        <p className="text-gray-400 text-sm mt-1">
+          영업시간: 월·화·수·금·토 16:30~23:00 | 목·일 정기휴무
+        </p>
+        <p className="text-gray-400 text-sm mt-1">
+          원산지: 소고기 국내산 · 돼지고기 국내산
+        </p>
+      </footer>
+
+    </main>
+  )
 }
