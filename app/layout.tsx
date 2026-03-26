@@ -121,6 +121,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: faqJson }}
         />
+        <link rel="alternate" hreflang="ko" href="https://mungtaegi.vercel.app" />
+        <link rel="alternate" hreflang="x-default" href="https://mungtaegi.vercel.app" />
       </head>
       <body>{children}</body>
     </html>
