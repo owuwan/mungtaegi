@@ -145,6 +145,21 @@ export default function Home() {
                   <span className="text-red-600 text-sm font-bold">부</span>
                 </div>
                 <div>
+                  <p className="font-semibold text-sm">부산단골52</p>
+                  <p className="text-gray-400 text-xs">방문 · 2026.04.03</p>
+                </div>
+                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">동래구에 위치한 이 고깃집은 한우의 품질이 정말 뛰어나고 직원분들이 고기를 완벽하게 구워주셔서 감동이었어요. 가격대비 만족도가 높고 반찬도 깔끔해서 가족들과 함께 다시 방문하고 싶</p>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <span className="text-red-600 text-sm font-bold">부</span>
+                </div>
+                <div>
                   <p className="font-semibold text-sm">부산미식가79</p>
                   <p className="text-gray-400 text-xs">방문 · 2026.04.03</p>
                 </div>
