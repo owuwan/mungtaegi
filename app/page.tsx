@@ -150,7 +150,7 @@ export default function Home() {
                 </div>
                 <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
               </div>
-              <p className="text-gray-700 text-sm leading-relaxed">```javascript {   nickname: '해운대갈매기',   rating: 5,   date: '2026.03.28',   content: '동래 아시아드대로에서 친구들</p>
+              <p className="text-gray-700 text-sm leading-relaxed">동래구 아시아드대로에서 친구들과 방문했는데 고기 퀄리티가 정말 좋았어요. 다음에도 꼭 오고 싶은 맛집입니다.</p>
             </div>
           </div>
           <div className="space-y-4">
