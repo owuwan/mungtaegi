@@ -65,18 +65,18 @@ export default function Home() {
               </div>
               <p className="text-gray-700 text-sm leading-relaxed"></p>
             </div>
-            <div class="bg-white rounded-xl p-6 border border-gray-100">
-              <div class="flex items-center gap-3 mb-3">
-                <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span class="text-red-600 text-sm font-bold">부</span>
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <span className="text-red-600 text-sm font-bold">부</span>
                 </div>
                 <div>
-                  <p class="font-semibold text-sm">부산미식가86</p>
-                  <p class="text-gray-400 text-xs">방문 · 2026.04.03</p>
+                  <p className="font-semibold text-sm">부산미식가86</p>
+                  <p className="text-gray-400 text-xs">방문 · 2026.04.03</p>
                 </div>
-                <span class="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
               </div>
-              <p class="text-gray-700 text-sm leading-relaxed"></p>
+              <p className="text-gray-700 text-sm leading-relaxed"></p>
             </div>
           <div className="border border-gray-100 rounded-xl p-5">
             <div className="flex justify-between items-start mb-2">
