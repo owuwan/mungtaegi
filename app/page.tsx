@@ -145,6 +145,21 @@ export default function Home() {
                   <span className="text-red-600 text-sm font-bold">현</span>
                 </div>
                 <div>
+                  <p className="font-semibold text-sm">현지주민68</p>
+                  <p className="text-gray-400 text-xs">방문 · 2026.04.04</p>
+                </div>
+                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">동래구에 있는 한우마을에서 등심과 갈비살을 먹었는데 고기 질이 정말 좋고 직원분들도 친절하셔서 만족스러웠어요. 가격은 조금 비싸지만 그만큼 맛과 서비스가 훌륭해서 특별한 날에 다시</p>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <span className="text-red-600 text-sm font-bold">현</span>
+                </div>
+                <div>
                   <p className="font-semibold text-sm">현지주민52</p>
                   <p className="text-gray-400 text-xs">방문 · 2026.04.04</p>
                 </div>
