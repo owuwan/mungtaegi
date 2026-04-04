@@ -5,6 +5,7 @@ export default function Home() {
   const [reviewPage, setReviewPage] = useState(0)
   const REVIEWS_PER_PAGE = 10
   const allReviews: {initial: string, name: string, date: string, text: string}[] = [
+    { initial: '부', name: '부산미식가46', date: '2026.04.04', text: '동래구에 있는 이 고깃집은 한우의 품질이 정말 좋아서 입에서 살살 녹더라고요. 직원분들도 친절하고 밑반찬도 깔끔해서 가족들과 함께 가기 좋은 곳이에요.' },
     { initial: '동', name: '동래맛집탐방18', date: '2026.04.04', text: '동래구에 있는 이 고깃집은 한우 품질이 정말 좋아서 입에서 살살 녹더라고요. 사장님도 친절하시고 밑반찬도 푸짐해서 가족들과 함께 오기 딱 좋은 곳이에요.' },
     { initial: '부', name: '부산단골29', date: '2026.04.04', text: '동래구에 있는 이 고깃집은 한우의 질이 정말 뛰어나고 직원분들이 고기를 완벽하게 구워주셔서 감동받았어요. 가격대비 만족도가 높아서 가족들과 함께 다시 방문할 예정입니다.' },
     { initial: 'K', name: 'key****', date: '2024.08.28', text: '사장님 친절하시고 고기 완전 맛나요. 여러 번 방문했는데 올 때마다 맛이 한결같아요.' },
