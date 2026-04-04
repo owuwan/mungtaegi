@@ -152,12 +152,10 @@ export default function Home() {
               </div>
               <p className="text-gray-700 text-sm leading-relaxed">동래구에 있는 한우마을에서 등심과 갈비살을 먹었는데 고기 질이 정말 좋고 직원분들도 친절하셔서 만족스러웠어요. 가격은 조금 비싸지만 그만큼 맛과 서비스가 훌륭해서 특별한 날에 다시</p>
             </div>
-          </div>
-          <div className="space-y-4">
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">현</span>
+                  <span className="text-red-600 text-sm font-bold">단</span>
                 </div>
                 <div>
                   <p className="font-semibold text-sm">현지주민52</p>
@@ -167,12 +165,10 @@ export default function Home() {
               </div>
               <p className="text-gray-700 text-sm leading-relaxed">동래구에 있는 이 고깃집은 한우의 질이 정말 좋아서 입에서 살살 녹더라구요. 사장님도 친절하시고 밑반찬도 깔끔해서 가족들과 함께 와서 배불리 잘 먹고 갔습니다.</p>
             </div>
-          </div>
-          <div className="space-y-4">
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">단</span>
+                  <span className="text-red-600 text-sm font-bold">부</span>
                 </div>
                 <div>
                   <p className="font-semibold text-sm">단골손님37</p>
@@ -182,8 +178,6 @@ export default function Home() {
               </div>
               <p className="text-gray-700 text-sm leading-relaxed">동래구에 있는 이 고깃집은 한우의 질이 정말 좋고 직원분들이 고기를 완벽하게 구워주셔서 감동했어요. 가격대비 만족도가 높고 밑반찬도 정갈해서 가족들과 다시 방문하고 싶습니다.</p>
             </div>
-          </div>
-          <div className="space-y-4">
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
@@ -197,12 +191,10 @@ export default function Home() {
               </div>
               <p className="text-gray-700 text-sm leading-relaxed">동래구에 위치한 이 고깃집은 한우의 품질이 정말 뛰어나고 직원분들이 고기를 완벽하게 구워주셔서 감동이었어요. 가격대비 만족도가 높고 반찬도 깔끔해서 가족들과 함께 다시 방문하고 싶</p>
             </div>
-          </div>
-          <div className="space-y-4">
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">부</span>
+                  <span className="text-red-600 text-sm font-bold">단</span>
                 </div>
                 <div>
                   <p className="font-semibold text-sm">부산미식가79</p>
@@ -212,12 +204,10 @@ export default function Home() {
               </div>
               <p className="text-gray-700 text-sm leading-relaxed">동래구 아시아드대로에서 친구들과 방문했는데 고기 퀄리티가 정말 좋았어요. 다음에도 꼭 오고 싶은 맛집입니다.</p>
             </div>
-          </div>
-          <div className="space-y-4">
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">단</span>
+                  <span className="text-red-600 text-sm font-bold">부</span>
                 </div>
                 <div>
                   <p className="font-semibold text-sm">단골손님40</p>
@@ -225,10 +215,8 @@ export default function Home() {
                 </div>
                 <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
               </div>
-              <p className="text-gray-700 text-sm leading-relaxed"></p>
+              <p className="text-gray-700 text-sm leading-relaxed">사장님 친절하시고 고기 완전 맛나요. 여러 번 방문했는데 올 때마다 맛이 한결같아요.</p>
             </div>
-          </div>
-          <div className="space-y-4">
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
@@ -240,14 +228,12 @@ export default function Home() {
                 </div>
                 <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
               </div>
-              <p className="text-gray-700 text-sm leading-relaxed"></p>
+              <p className="text-gray-700 text-sm leading-relaxed">너무너무 맛있어요 최고. 연인과 함께 방문했는데 분위기도 좋고 고기 퀄리티가 정말 뛰어납니다.</p>
             </div>
-          </div>
-          <div className="space-y-4">
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">부</span>
+                  <span className="text-red-600 text-sm font-bold">K</span>
                 </div>
                 <div>
                   <p className="font-semibold text-sm">부산단골83</p>
@@ -255,22 +241,7 @@ export default function Home() {
                 </div>
                 <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
               </div>
-              <p className="text-gray-700 text-sm leading-relaxed"></p>
-            </div>
-          </div>
-          <div className="space-y-4">
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">K</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm">key****</p>
-                  <p className="text-gray-400 text-xs">4번째 방문 · 2024.08.28</p>
-                </div>
-                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 text-sm leading-relaxed">사장님 친절하시고 고기 완전 맛나요. 여러 번 방문했는데 올 때마다 맛이 한결같아요.</p>
+              <p className="text-gray-700 text-sm leading-relaxed">맛있습니다 가성비굿. 데이트로 방문했는데 고기 퀄리티 대비 가격이 정말 합리적이에요.</p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <div className="flex items-center gap-3 mb-3">
@@ -278,12 +249,12 @@ export default function Home() {
                   <span className="text-red-600 text-sm font-bold">냐</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-sm">냐햐하햐</p>
-                  <p className="text-gray-400 text-xs">2번째 방문 · 2024.08.10</p>
+                  <p className="font-semibold text-sm">key****</p>
+                  <p className="text-gray-400 text-xs">방문 · </p>
                 </div>
                 <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
               </div>
-              <p className="text-gray-700 text-sm leading-relaxed">너무너무 맛있어요 최고. 연인과 함께 방문했는데 분위기도 좋고 고기 퀄리티가 정말 뛰어납니다.</p>
+              <p className="text-gray-700 text-sm leading-relaxed"></p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <div className="flex items-center gap-3 mb-3">
@@ -291,15 +262,28 @@ export default function Home() {
                   <span className="text-red-600 text-sm font-bold">C</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-sm">cleanbyun</p>
-                  <p className="text-gray-400 text-xs">4번째 방문 · 2024.06.25</p>
+                  <p className="font-semibold text-sm">냐햐하햐</p>
+                  <p className="text-gray-400 text-xs">방문 · </p>
                 </div>
                 <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
               </div>
-              <p className="text-gray-700 text-sm leading-relaxed">맛있습니다 가성비굿. 데이트로 방문했는데 고기 퀄리티 대비 가격이 정말 합리적이에요.</p>
+              <p className="text-gray-700 text-sm leading-relaxed"></p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <span className="text-red-600 text-sm font-bold">c</span>
+                </div>
+                <div>
+                  <p className="font-semibold text-sm">cleanbyun</p>
+                  <p className="text-gray-400 text-xs">방문 · </p>
+                </div>
+                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed"></p>
             </div>
           </div>
-          <div className="mt-6 text-center">
+<div className="mt-6 text-center">
             <a href="https://naver.me/mungtaegi" className="inline-block bg-green-500 text-white font-bold px-6 py-3 rounded-xl text-sm">
               네이버 플레이스 리뷰 남기기
             </a>
