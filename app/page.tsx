@@ -5,6 +5,12 @@ export default function Home() {
   const [reviewPage, setReviewPage] = useState(0)
   const REVIEWS_PER_PAGE = 10
   const allReviews: {initial: string, name: string, date: string, text: string}[] = [
+    { initial: 'K', name: 'key****', date: '2024.08.28', text: '사장님 친절하시고 고기 완전 맛나요. 여러 번 방문했는데 올 때마다 맛이 한결같아요.' },
+    { initial: '냐', name: '냐햐하햐', date: '2024.08.10', text: '너무너무 맛있어요 최고. 연인과 함께 방문했는데 분위기도 좋고 고기 퀄리티가 정말 뛰어납니다.' },
+    { initial: 'C', name: 'cleanbyun', date: '2024.06.25', text: '맛있습니다 가성비굿. 데이트로 방문했는데 고기 퀄리티 대비 가격이 정말 합리적이에요.' },
+    { initial: '부', name: '부산미식가87', date: '2026.04.04', text: '동래구에 있는 이 고깃집은 한우의 질이 정말 좋아서 입에서 살살 녹더라구요. 사장님도 친절하시고 밑반찬도 깔끔해서 가족들과 함께 와서 배불리 잘 먹고 갔습니다.' },
+    { initial: '현', name: '현지주민52', date: '2026.04.04', text: '동래구에 있는 이 고깃집은 한우의 질이 정말 좋아서 입에서 살살 녹더라구요. 사장님도 친절하시고 밑반찬도 깔끔해서 가족들과 함께 와서 배불리 잘 먹고 갔습니다.' },
+    { initial: '단', name: '단골손님37', date: '2026.04.04', text: '동래구에 있는 이 고깃집은 한우의 질이 정말 좋고 직원분들이 고기를 완벽하게 구워주셔서 감동했어요. 가격대비 만족도가 높고 밑반찬도 정갈해서 가족들과 다시 방문하고 싶습니다.' },
   ]
   const totalPages = Math.ceil(allReviews.length / REVIEWS_PER_PAGE)
   const currentReviews = allReviews.slice(reviewPage * REVIEWS_PER_PAGE, (reviewPage + 1) * REVIEWS_PER_PAGE)
@@ -59,6 +65,10 @@ export default function Home() {
       </section>
 
       <section className="px-6 py-12 max-w-3xl mx-auto" id="menu">
+        <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-6">
+            <p className="text-sm font-bold text-yellow-800">🍽️ 4월 추천 메뉴</p>
+            <p className="text-sm text-yellow-700 mt-1">이번 달 추천 메뉴는 생갈비살입니다. 봄철 신선한 재료로 더욱 맛있습니다.</p>
+          </div>
         <h2 className="text-2xl font-bold mb-2">대표 메뉴</h2>
         <p className="text-gray-500 mb-8">정육시장 직배 신선 고기만 사용합니다</p>
         <div className="space-y-4">
@@ -150,10 +160,6 @@ export default function Home() {
           <p className="text-gray-500 mb-8">실제 방문 손님들의 이야기</p>
           <div className="flex gap-3 mb-6 flex-wrap">
             <span className="bg-red-700 text-white text-xs font-bold px-3 py-1 rounded-full">2026년 4월 현재 운영 중</span>
-          </div>
-          <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-6">
-            <p className="text-sm font-bold text-yellow-800">🍽️ 4월 추천 메뉴</p>
-            <p className="text-sm text-yellow-700 mt-1">이번 달 추천 메뉴는 생갈비살입니다. 봄철 신선한 재료로 더욱 맛있습니다.</p>
           </div>
           <div className="space-y-4">
             {currentReviews.map((r, idx) => (
