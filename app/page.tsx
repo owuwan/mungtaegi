@@ -142,6 +142,21 @@ export default function Home() {
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <span className="text-red-600 text-sm font-bold">단</span>
+                </div>
+                <div>
+                  <p className="font-semibold text-sm">단골손님37</p>
+                  <p className="text-gray-400 text-xs">방문 · 2026.04.04</p>
+                </div>
+                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">동래구에 있는 이 고깃집은 한우의 질이 정말 좋고 직원분들이 고기를 완벽하게 구워주셔서 감동했어요. 가격대비 만족도가 높고 밑반찬도 정갈해서 가족들과 다시 방문하고 싶습니다.</p>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
                   <span className="text-red-600 text-sm font-bold">부</span>
                 </div>
                 <div>
