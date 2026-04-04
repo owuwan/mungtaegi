@@ -163,19 +163,6 @@ export default function Home() {
             <span className="bg-red-700 text-white text-xs font-bold px-3 py-1 rounded-full">2026년 4월 현재 운영 중</span>
           </div>
           <div className="space-y-4">
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">부</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm">부산단골29</p>
-                  <p className="text-gray-400 text-xs">방문 · 2026.04.04</p>
-                </div>
-                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 text-sm leading-relaxed">동래구에 있는 이 고깃집은 한우의 질이 정말 뛰어나고 직원분들이 고기를 완벽하게 구워주셔서 감동받았어요. 가격대비 만족도가 높아서 가족들과 함께 다시 방문할 예정입니다.</p>
-            </div>
             {currentReviews.map((r, idx) => (
               <div key={idx} className="bg-white rounded-xl p-6 border border-gray-100">
                 <div className="flex items-center gap-3 mb-3">
