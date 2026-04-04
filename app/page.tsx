@@ -1,4 +1,14 @@
+'use client'
+import { useState } from 'react'
+
 export default function Home() {
+  const [reviewPage, setReviewPage] = useState(0)
+  const REVIEWS_PER_PAGE = 10
+  const allReviews: {initial: string, name: string, date: string, text: string}[] = [
+  ]
+  const totalPages = Math.ceil(allReviews.length / REVIEWS_PER_PAGE)
+  const currentReviews = allReviews.slice(reviewPage * REVIEWS_PER_PAGE, (reviewPage + 1) * REVIEWS_PER_PAGE)
+
   return (
     <main className="min-h-screen bg-white text-gray-900">
 
@@ -138,165 +148,44 @@ export default function Home() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold mb-2">방문 후기</h2>
           <p className="text-gray-500 mb-8">실제 방문 손님들의 이야기</p>
-          <div className="space-y-4">
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">부</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm">부산미식가87</p>
-                  <p className="text-gray-400 text-xs">방문 · 2026.04.04</p>
-                </div>
-                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 text-sm leading-relaxed">동래구에 있는 이 고깃집은 한우 품질이 정말 좋고 직원분들이 고기 구워주는 서비스까지 친절했어요. 된장찌개랑 밑반찬도 푸짐하게 나와서 가족들과 만족스럽게 식사했습니다.</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">현</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm">현지주민68</p>
-                  <p className="text-gray-400 text-xs">방문 · 2026.04.04</p>
-                </div>
-                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 text-sm leading-relaxed">동래구에 있는 한우마을에서 등심과 갈비살을 먹었는데 고기 질이 정말 좋고 직원분들도 친절하셔서 만족스러웠어요. 가격은 조금 비싸지만 그만큼 맛과 서비스가 훌륭해서 특별한 날에 다시</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">단</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm">현지주민52</p>
-                  <p className="text-gray-400 text-xs">방문 · 2026.04.04</p>
-                </div>
-                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 text-sm leading-relaxed">동래구에 있는 이 고깃집은 한우의 질이 정말 좋아서 입에서 살살 녹더라구요. 사장님도 친절하시고 밑반찬도 깔끔해서 가족들과 함께 와서 배불리 잘 먹고 갔습니다.</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">부</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm">단골손님37</p>
-                  <p className="text-gray-400 text-xs">방문 · 2026.04.04</p>
-                </div>
-                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 text-sm leading-relaxed">동래구에 있는 이 고깃집은 한우의 질이 정말 좋고 직원분들이 고기를 완벽하게 구워주셔서 감동했어요. 가격대비 만족도가 높고 밑반찬도 정갈해서 가족들과 다시 방문하고 싶습니다.</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">부</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm">부산단골52</p>
-                  <p className="text-gray-400 text-xs">방문 · 2026.04.03</p>
-                </div>
-                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 text-sm leading-relaxed">동래구에 위치한 이 고깃집은 한우의 품질이 정말 뛰어나고 직원분들이 고기를 완벽하게 구워주셔서 감동이었어요. 가격대비 만족도가 높고 반찬도 깔끔해서 가족들과 함께 다시 방문하고 싶</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">단</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm">부산미식가79</p>
-                  <p className="text-gray-400 text-xs">방문 · 2026.04.03</p>
-                </div>
-                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 text-sm leading-relaxed">동래구 아시아드대로에서 친구들과 방문했는데 고기 퀄리티가 정말 좋았어요. 다음에도 꼭 오고 싶은 맛집입니다.</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">부</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm">단골손님40</p>
-                  <p className="text-gray-400 text-xs">방문 · 2026.04.03</p>
-                </div>
-                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 text-sm leading-relaxed">사장님 친절하시고 고기 완전 맛나요. 여러 번 방문했는데 올 때마다 맛이 한결같아요.</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">부</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm">부산미식가49</p>
-                  <p className="text-gray-400 text-xs">방문 · 2026.04.03</p>
-                </div>
-                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 text-sm leading-relaxed">너무너무 맛있어요 최고. 연인과 함께 방문했는데 분위기도 좋고 고기 퀄리티가 정말 뛰어납니다.</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">K</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm">부산단골83</p>
-                  <p className="text-gray-400 text-xs">방문 · 2026.04.03</p>
-                </div>
-                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 text-sm leading-relaxed">맛있습니다 가성비굿. 데이트로 방문했는데 고기 퀄리티 대비 가격이 정말 합리적이에요.</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">냐</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm">key****</p>
-                  <p className="text-gray-400 text-xs">방문 · </p>
-                </div>
-                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 text-sm leading-relaxed"></p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">C</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm">냐햐하햐</p>
-                  <p className="text-gray-400 text-xs">방문 · </p>
-                </div>
-                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 text-sm leading-relaxed"></p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                  <span className="text-red-600 text-sm font-bold">c</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm">cleanbyun</p>
-                  <p className="text-gray-400 text-xs">방문 · </p>
-                </div>
-                <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 text-sm leading-relaxed"></p>
-            </div>
+          <div className="flex gap-3 mb-6 flex-wrap">
+            <span className="bg-red-700 text-white text-xs font-bold px-3 py-1 rounded-full">2026년 4월 현재 운영 중</span>
           </div>
-<div className="mt-6 text-center">
+          <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-6">
+            <p className="text-sm font-bold text-yellow-800">🍽️ 4월 추천 메뉴</p>
+            <p className="text-sm text-yellow-700 mt-1">이번 달 추천 메뉴는 생갈비살입니다. 봄철 신선한 재료로 더욱 맛있습니다.</p>
+          </div>
+          <div className="space-y-4">
+            {currentReviews.map((r, idx) => (
+              <div key={idx} className="bg-white rounded-xl p-6 border border-gray-100">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                    <span className="text-red-600 text-sm font-bold">{r.initial}</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">{r.name}</p>
+                    <p className="text-gray-400 text-xs">방문 · {r.date}</p>
+                  </div>
+                  <span className="ml-auto text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed">{r.text}</p>
+              </div>
+            ))}
+          </div>
+          {totalPages > 1 && (
+            <div className="flex justify-center gap-2 mt-6">
+              {Array.from({ length: totalPages }).map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setReviewPage(i)}
+                  className={`w-8 h-8 rounded-full text-sm font-bold ${reviewPage === i ? 'bg-red-700 text-white' : 'bg-gray-100 text-gray-600'}`}
+                >
+                  {i + 1}
+                </button>
+              ))}
+            </div>
+          )}
+          <div className="mt-6 text-center">
             <a href="https://naver.me/mungtaegi" className="inline-block bg-green-500 text-white font-bold px-6 py-3 rounded-xl text-sm">
               네이버 플레이스 리뷰 남기기
             </a>
