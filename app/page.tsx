@@ -5,6 +5,7 @@ export default function Home() {
   const [reviewPage, setReviewPage] = useState(0)
   const REVIEWS_PER_PAGE = 10
   const allReviews: {initial: string, name: string, date: string, text: string}[] = [
+    { initial: '부', name: '부산동래구현지주민53', date: '2026.04.06', text: '동래구에 있는 이 고깃집은 한우 갈비살이 정말 부드럽고 육즙이 풍부해서 감동받았어요. 밑반찬도 깔끔하고 사장님이 친절해서 가족들과 함께 다시 방문하고 싶습니다.' },
     { initial: '부', name: '부산동래구미식가65', date: '2026.04.06', text: '동래구 온천장역 근처에 있는 한우전문점에서 등심을 먹었는데 육질이 정말 부드럽고 고소했어요. 직원분들도 친절하시고 밑반찬도 깔끔해서 가족모임 장소로 추천하고 싶습니다.' },
     { initial: '부', name: '부산동래구미식가50', date: '2026.04.06', text: '동래구에서 찾은 숨은 맛집인데 한우 등심이 정말 부드럽고 육즙이 살아있어서 감탄했어요. 밑반찬도 정갈하고 사장님이 직접 구워주셔서 더욱 맛있게 먹을 수 있었습니다.' },
     { initial: '부', name: '부산동래구현지주민89', date: '2026.04.06', text: '동래구에 있는 이 고깃집은 한우의 육질이 정말 부드럽고 직원분들이 고기를 완벽하게 구워주셔서 너무 만족스러웠어요. 가격대비 퀄리티도 훌륭하고 밑반찬도 정갈해서 가족들과 다시 방문하' },
