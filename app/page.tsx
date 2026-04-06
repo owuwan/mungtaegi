@@ -5,6 +5,7 @@ export default function Home() {
   const [reviewPage, setReviewPage] = useState(0)
   const REVIEWS_PER_PAGE = 10
   const allReviews: {initial: string, name: string, date: string, text: string}[] = [
+    { initial: '부', name: '부산동래구미식가75', date: '2026.04.06', text: '온천천 근처에 있는 이 고깃집은 한우 품질이 정말 좋아서 입에서 살살 녹더라구요. 사장님도 친절하시고 밑반찬도 깔끔해서 가족들과 다시 방문할 예정입니다.' },
     { initial: '부', name: '부산동래구미식가45', date: '2026.04.06', text: '동래 벌통삼겹살에서 두툼한 삼겹살을 먹었는데 육즙이 풍부하고 불맛이 일품이었어요. 밑반찬도 정갈하게 나오고 직원분들이 친절해서 가족 모임 장소로 강추합니다.' },
     { initial: '부', name: '부산동래구미식가98', date: '2026.04.06', text: '동래 온천장 근처에 있는 이 한우집은 고기 질이 정말 좋고 직원분들도 친절하게 구워주셔서 편하게 먹을 수 있었어요. 가격은 조금 비싸지만 그만큼 고기가 부드럽고 맛있어서 특별한 날' },
     { initial: '부', name: '부산동래구현지주민53', date: '2026.04.06', text: '동래구에 있는 이 고깃집은 한우 갈비살이 정말 부드럽고 육즙이 풍부해서 감동받았어요. 밑반찬도 깔끔하고 사장님이 친절해서 가족들과 함께 다시 방문하고 싶습니다.' },
