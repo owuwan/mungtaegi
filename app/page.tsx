@@ -5,6 +5,7 @@ export default function Home() {
   const [reviewPage, setReviewPage] = useState(0)
   const REVIEWS_PER_PAGE = 10
   const allReviews: {initial: string, name: string, date: string, text: string}[] = [
+    { initial: '부', name: '부산동래구방문객15', date: '2026.04.06', text: '동래구에 있는 한우 전문점에 갔는데 고기 질이 정말 좋았고 밑반찬도 깔끔했어요. 직원분들도 친절하시고 가격 대비 만족스러워서 가족들과 다시 방문할 예정입니다.' },
     { initial: '부', name: '부산동래구단골손님65', date: '2026.04.06', text: '동래구 명륜동에 있는 한우마을에서 등심과 갈비살을 먹었는데 고기 질이 정말 좋고 직원분들이 친절하게 구워주셔서 편했어요. 가격대가 조금 있지만 그만큼 맛과 서비스가 훌륭해서 가족 ' },
     { initial: '부', name: '부산동래구현지주민79', date: '2026.04.06', text: '동래구에 있는 이 고깃집은 한우 품질이 정말 좋고 직원분들이 고기 구워주는 서비스까지 해주셔서 편하게 먹을 수 있었어요. 가격대는 조금 있지만 그만큼 고기 질이 훌륭해서 가족 모임' },
     { initial: '부', name: '부산동래구미식가56', date: '2026.04.06', text: '동래구에 있는 이 고깃집은 한우의 품질이 정말 뛰어나고 직원분들이 고기를 완벽하게 구워주셔서 감동받았어요. 가격대비 고기 질과 서비스가 훌륭해서 가족 모임 장소로 강력 추천하고 싶' },
