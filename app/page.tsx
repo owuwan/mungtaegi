@@ -5,6 +5,7 @@ export default function Home() {
   const [reviewPage, setReviewPage] = useState(0)
   const REVIEWS_PER_PAGE = 10
   const allReviews: {initial: string, name: string, date: string, text: string}[] = [
+    { initial: '부', name: '부산동래구단골손님15', date: '2026.04.06', text: '부산 동래구 회식으로 뭉태기를 방문했는데 생갈비살이 정말 부드럽고 맛있어서 깜짝 놀랐습니다. 분위기도 좋고 음식 퀄리티도 훌륭해서 부산 동래구 맛집으로 강력 추천하고 싶어요.' },
     { initial: '부', name: '부산동래구방문객88', date: '2026.04.06', text: '동래구 명륜동에 있는 이 고깃집은 한우 등심이 정말 부드럽고 육즙이 살아있어서 감탄했어요. 밑반찬도 정갈하고 직원분들이 친절해서 가족 모임 장소로 강력 추천합니다.' },
     { initial: '부', name: '부산동래구현지주민43', date: '2026.04.06', text: '동래구에 있는 이 고깃집은 한우의 육질이 정말 부드럽고 고소한 맛이 일품이었어요. 밑반찬도 깔끔하고 직원분들이 친절해서 가족 모임 장소로 강력 추천합니다.' },
     { initial: '부', name: '부산동래구미식가67', date: '2026.04.06', text: '동래 온천천 근처에 있는 이 고깃집은 한우 갈비살이 정말 부드럽고 육즙이 풍부해서 감동받았어요. 밑반찬도 정갈하고 사장님이 친절해서 가족들과 함께 다시 방문하고 싶습니다.' },
