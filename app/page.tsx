@@ -5,6 +5,7 @@ export default function Home() {
   const [reviewPage, setReviewPage] = useState(0)
   const REVIEWS_PER_PAGE = 10
   const allReviews: {initial: string, name: string, date: string, text: string}[] = [
+    { initial: '부', name: '부산동래구미식가56', date: '2026.04.06', text: '동래구에 있는 이 고깃집은 한우의 품질이 정말 뛰어나고 직원분들이 고기를 완벽하게 구워주셔서 감동받았어요. 가격대비 고기 질과 서비스가 훌륭해서 가족 모임 장소로 강력 추천하고 싶' },
     { initial: '부', name: '부산동래구방문객31', date: '2026.04.06', text: '동래구에 있는 한우마을에서 저녁을 먹었는데 한우 등심이 정말 부드럽고 고소한 맛이 일품이었어요. 밑반찬도 깔끔하고 직원분들이 친절해서 가족 모임 장소로 추천하고 싶습니다.' },
     { initial: '부', name: '부산동래구맛집탐방25', date: '2026.04.06', text: '동래구에서 찾은 숨은 맛집인데 한우 갈비살이 정말 부드럽고 육즙이 풍부해서 감동했어요. 사장님도 친절하시고 밑반찬도 깔끔해서 가족들과 다시 방문할 예정입니다.' },
     { initial: '부', name: '부산동래구맛집탐방85', date: '2026.04.06', text: '동래구에 있는 한우마을에서 등심을 먹었는데 육질이 정말 부드럽고 고소했어요. 직원분들도 친절하고 밑반찬도 깔끔해서 가족들과 다시 방문하고 싶습니다.' },
