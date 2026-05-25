@@ -5,6 +5,7 @@ export default function Home() {
   const [reviewPage, setReviewPage] = useState(0)
   const REVIEWS_PER_PAGE = 10
   const allReviews: {initial: string, name: string, date: string, text: string}[] = [
+    { initial: '부', name: '부산동래구미식가84', date: '2026.05.25', text: '부산 동래구 데이트로 뭉태기에 갔는데 생갈비살이 정말 부드럽고 육즙이 풍부해서 감탄했어요. 분위기도 좋고 음식도 훌륭한 부산 동래구 맛집으로 강력 추천합니다.' },
     { initial: '부', name: '부산동래구방문객39', date: '2026.05.18', text: '부산 동래구 친구 모임으로 뭉태기에 갔는데 생갈비살이 정말 부드럽고 맛있었어요. 분위기도 좋고 고기 질이 훌륭해서 부산 동래구 맛집으로 강력 추천합니다.' },
     { initial: '부', name: '부산동래구단골손님24', date: '2026.05.11', text: '부산 동래구 가족 외식으로 뭉태기에 방문했는데 생갈비살이 정말 부드럽고 맛있었어요. 분위기도 좋고 서비스도 친절해서 부산 동래구 맛집으로 강력 추천합니다.' },
     { initial: '부', name: '부산동래구현지주민95', date: '2026.05.04', text: '부산 동래구 친구 모임으로 뭉태기에서 생갈비살을 먹었는데 육즙이 풍부하고 정말 맛있었어요. 부산 동래구 고기 맛집으로 강력 추천하고 싶은 곳입니다.' },
