@@ -5,6 +5,7 @@ export default function Home() {
   const [reviewPage, setReviewPage] = useState(0)
   const REVIEWS_PER_PAGE = 10
   const allReviews: {initial: string, name: string, date: string, text: string}[] = [
+    { initial: '부', name: '부산동래구미식가22', date: '2026.07.06', text: '' },
     { initial: '부', name: '부산동래구미식가54', date: '2026.06.29', text: '' },
     { initial: '부', name: '부산동래구맛집탐방91', date: '2026.06.22', text: '' },
     { initial: '부', name: '부산동래구방문객4', date: '2026.06.15', text: '부산 동래구 데이트로 뭉태기에 갔는데 생갈비살의 육즙이 정말 일품이었어요. 부산 동래구 맛집으로 커플들에게 적극 추천하고 싶은 곳입니다.' },
