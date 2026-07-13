@@ -5,6 +5,7 @@ export default function Home() {
   const [reviewPage, setReviewPage] = useState(0)
   const REVIEWS_PER_PAGE = 10
   const allReviews: {initial: string, name: string, date: string, text: string}[] = [
+    { initial: '부', name: '부산동래구현지주민93', date: '2026.07.13', text: '' },
     { initial: '부', name: '부산동래구미식가22', date: '2026.07.06', text: '' },
     { initial: '부', name: '부산동래구미식가54', date: '2026.06.29', text: '' },
     { initial: '부', name: '부산동래구맛집탐방91', date: '2026.06.22', text: '' },
